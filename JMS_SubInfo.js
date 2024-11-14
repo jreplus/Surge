@@ -12,7 +12,7 @@
 */
 
 let args = getArgs();
-let title = args.title || "JMS_info"
+let title = args.title || "JMS_Info"
 let icon = args.icon || "airplane.circle";
 let iconColor = args.color || "#32CD32";
 const apiUrl = args.url;
