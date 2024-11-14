@@ -42,9 +42,9 @@ JMS_getDataInfo(apiUrl, function (result) {
   if (resetDayLeft || expireDate) {
     if (resetDayLeft && expireDate && expireDate !== "false") {
       if (/^[\d.]+$/.test(expireDate)) expireDate *= 1000;
-      content.push(`离重置还有: ${resetDayLeft} 天 \n 到期: ${formatTime(expireDate)}`);
+      content.push(`离重置还有: ${resetDayLeft} 天 \n套餐到期日: ${formatTime(expireDate)}`);
     } else if (resetDayLeft && !expireDate) {
-      content.push(`离重置还有: ${resetDayLeft} 天 \n 到期: ${formatTime(resetDate)}`);
+      content.push(`离重置还有: ${resetDayLeft} 天 \n套餐到期日: ${formatTime(resetDate)}`);
     } else if (!resetDayLeft) {
       content.push(`到期时间：${formatTime(resetDate)}`);
     }
